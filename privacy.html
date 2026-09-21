@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — GridWatch</title>
-<meta name="description" content="How GridWatch collects, uses, and protects data for field engineers and grid operators monitoring transformer nodes across Ghana.">
+<meta name="description" content="Official Privacy Policy for GridWatch Field Console. Zero-knowledge, local-first architecture for electrical telemetry monitoring.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="theme-init.js"></script>
 </head>
 <body>
 
@@ -26,90 +27,133 @@
       <li><a href="privacy.html" aria-current="page">Privacy</a></li>
       <li><a href="support.html">Support</a></li>
     </ul>
-    <a href="support.html" class="nav-cta">Get the app</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="support.html" class="nav-cta">Get the app</a>
+    </div>
   </div>
 </nav>
 
 <header class="page-header">
   <div class="wrap">
-    <span class="section-label">Legal</span>
-    <h1>Privacy Policy</h1>
-    <span class="updated">Last updated: July 13, 2026</span>
+    <span class="section-label">Legal &amp; Policy</span>
+    <h1>Official Privacy Policy</h1>
+    <span class="updated">Effective Date: September 21, 2026 · Version 1.0 (Build 19)</span>
   </div>
 </header>
 
 <div class="content">
-  <p>GridWatch is built for field engineers and grid operators who monitor transformer infrastructure. This policy explains what we collect, why, and how it's handled — in plain terms, without the legal filler.</p>
+  <p>GridWatch Field Console (developed by Kaliblip) is engineered on a <strong>"Zero Knowledge, Local-First"</strong> architecture. We do not operate remote user accounts, we do not require registration, we do not run marketing trackers, and we never collect, monetize, or broker personal user information.</p>
 
   <div class="toc">
-    <span class="toc-label">On this page</span>
+    <span class="toc-label">Table of Contents</span>
     <ol>
-      <li><a href="#collect">What we collect</a></li>
-      <li><a href="#node-data">Transformer node data</a></li>
-      <li><a href="#use">How we use it</a></li>
-      <li><a href="#sharing">Sharing and third parties</a></li>
-      <li><a href="#retention">Data retention</a></li>
-      <li><a href="#security">Security</a></li>
-      <li><a href="#rights">Your rights</a></li>
-      <li><a href="#children">Children's privacy</a></li>
-      <li><a href="#changes">Changes to this policy</a></li>
-      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#overview">Overview &amp; Core Commitment</a></li>
+      <li><a href="#collection">Data Collection &amp; Handling Practices</a></li>
+      <li><a href="#permissions">Device Permissions &amp; Explanations</a></li>
+      <li><a href="#third-parties">Third-Party Network Services &amp; Data Sharing</a></li>
+      <li><a href="#storage">Data Storage, Caching &amp; Deletion Rights</a></li>
+      <li><a href="#tracking">Tracking, Analytics &amp; Advertising Policy</a></li>
+      <li><a href="#accounts">Account Creation &amp; Biometric Security</a></li>
+      <li><a href="#children">Children's Privacy (COPPA &amp; GDPR-K)</a></li>
+      <li><a href="#rights">User Rights Under International Law (GDPR &amp; CCPA/CPRA)</a></li>
+      <li><a href="#changes">Changes to Policy &amp; Contact Inquiries</a></li>
     </ol>
   </div>
 
-  <h2 id="collect">1. What we collect</h2>
-  <p>To provision your account and run the app, we collect:</p>
-  <ul>
-    <li><strong>Account information</strong> — name, work email, organization, and role, provided when your administrator sets up your access or when you sign in through your organization's SSO.</li>
-    <li><strong>Device information</strong> — device type, operating system version, and a push notification token, used to deliver alerts to the right device.</li>
-    <li><strong>App activity</strong> — which nodes you view, alerts you acknowledge, and issues or maintenance requests you file, so your team has a shared record of who did what.</li>
-  </ul>
-  <p>GridWatch does not collect your personal location. Location data in the app refers to the fixed GPS coordinates of transformer installations, not to the device running the app.</p>
+  <h2 id="overview">2.1 Overview &amp; Core Commitment</h2>
+  <p>GridWatch ("we," "us," or "our"), developed by Kaliblip, is an industrial telemetry and diagnostic monitoring field console engineered for utility operators, field engineers, and electrical technicians to monitor transformer health metrics (such as voltage, current, temperature, humidity, and oil levels) across electrical power grids.</p>
+  <p>Your privacy is paramount. GridWatch is designed from the ground up on a "Zero Knowledge, Local-First" architecture. We do not operate remote user accounts, we do not require registration, we do not run marketing trackers, and we never collect, monetize, or broker personal user information.</p>
 
-  <h2 id="node-data">2. Transformer node data</h2>
-  <p>GridWatch displays operational data streamed from IoT sensors installed on transformer equipment, structured as channel fields (voltage, current, power load, temperature, and related readings) and relayed through your organization's ThingSpeak backend. This data describes equipment, not people, and is owned and controlled by the utility or organization operating the transformer network.</p>
-
-  <h2 id="use">3. How we use it</h2>
-  <p>We use the information above to:</p>
+  <h2 id="collection">2.2 Data Collection &amp; Handling Practices</h2>
+  <p>We categorize the data handled by GridWatch as follows:</p>
   <ul>
-    <li>Authenticate you and apply the correct permissions for your organization</li>
-    <li>Display live and historical node data relevant to your account</li>
-    <li>Send push notifications for alerts you've opted into</li>
-    <li>Maintain an audit trail of issue reports and maintenance schedules</li>
-    <li>Diagnose technical problems and improve app reliability</li>
+    <li><strong>A. Personal Identifying Information (PII):</strong> GridWatch does NOT collect names, email addresses, phone numbers, home addresses, or financial information. No remote user profiles or cloud accounts are created or maintained by GridWatch.</li>
+    <li><strong>B. Location Information:</strong> Precise and coarse GPS coordinates of your current device location are collected strictly while the application is in active use. This is used to calculate geographical proximity to field transformer nodes, compute driving route distances, generate road polylines via Open Source Routing Machine (OSRM), and open turn-by-turn navigation in Apple Maps or Google Maps. Location data is ephemeral, held strictly in volatile device memory while the map screen is open, and is never logged to a remote database, uploaded to our servers, or retained once the app is closed.</li>
+    <li><strong>C. Telemetry &amp; Hardware Channel Configurations:</strong> Handles public or private ThingSpeak Channel IDs, Read API Keys, and IoT sensor metrics (phase voltage, load current, winding/oil temperature, ambient humidity, oil level percentages, and device operational status). All channel identifiers, custom node names, and Read API Keys are stored strictly on your physical device via private application sandboxed storage (AsyncStorage). We do not host or duplicate these keys on any proprietary central server.</li>
+    <li><strong>D. Biometric Authentication Data:</strong> Face ID, Touch ID, or iOS Device Passcode prompts interact directly with Apple's standard LocalAuthentication APIs. All biometric verification occurs strictly within the hardware-isolated Secure Enclave of your Apple device. GridWatch never receives, processes, transmits, or stores your biometric characteristics or face data.</li>
   </ul>
 
-  <h2 id="sharing">4. Sharing and third parties</h2>
-  <p>We don't sell personal data. Information is shared only in these cases:</p>
+  <h2 id="permissions">2.3 Device Permissions &amp; Explanations (iOS Info.plist)</h2>
+  <p>GridWatch requests only the minimum permissions necessary to deliver its core industrial utilities:</p>
   <ul>
-    <li><strong>Your organization</strong> — administrators within your organization can see account and activity data for members of their team.</li>
-    <li><strong>ThingSpeak / IoT backend</strong> — node metrics are read from the channel your organization has configured; we don't route this data to any additional third party.</li>
-    <li><strong>Service providers</strong> — infrastructure providers (such as hosting and push notification services) that process data strictly on our behalf, under agreements limiting their use of it.</li>
-    <li><strong>Legal requirements</strong> — if required to comply with applicable law or a valid legal request.</li>
+    <li><strong>1. NSLocationWhenInUseUsageDescription:</strong> <em>"GridWatch needs your location to display your position and calculate directions to transformer nodes."</em> Displays your location pin relative to nearby transformers on the interactive MapKit map, calculates driving distance/time estimates, and initiates turn-by-turn navigation. You may enable or revoke location permissions at any time in iOS Settings &gt; GridWatch &gt; Location.</li>
+    <li><strong>2. NSFaceIDUsageDescription:</strong> <em>"GridWatch requires Face ID / Passkey authentication to secure transformer monitoring data."</em> Secures the field console against unauthorized physical access to critical infrastructure monitoring channels. Can be managed or bypassed using the device passcode or via the on-screen Demo Mode.</li>
   </ul>
 
-  <h2 id="retention">5. Data retention</h2>
-  <p>Account data is retained for as long as your organization keeps your account active. Historical node metrics are retained according to your organization's ThingSpeak channel settings. Alert and maintenance logs are retained for 24 months to support audit and reporting needs, unless your organization requests earlier deletion.</p>
+  <h2 id="third-parties">2.4 Third-Party Network Services &amp; Data Sharing</h2>
+  <p>GridWatch communicates over encrypted TLS/HTTPS connections with the following third-party technical services:</p>
+  <ul>
+    <li><strong>1. MathWorks ThingSpeak REST API (<a class="inline-link" href="https://api.thingspeak.com" target="_blank" rel="noopener">https://api.thingspeak.com</a>):</strong> Queries the ThingSpeak REST API using user-provided Channel ID and Read API Key to retrieve live and historical telemetry feeds sent by IoT transformer sensors. Only requested Channel ID and Read API Key are sent; no personal user identity or device identifiers are transmitted. (<a class="inline-link" href="https://www.mathworks.com/company/aboutus/policies_statements/patents/privacy_policy.html" target="_blank" rel="noopener">ThingSpeak Privacy Policy</a>)</li>
+    <li><strong>2. Open Source Routing Machine (OSRM) (<a class="inline-link" href="https://router.project-osrm.org" target="_blank" rel="noopener">https://router.project-osrm.org</a>):</strong> Coordinates of origin and destination points are sent to the OSRM routing engine to retrieve road geometry. No personal identifiers or device metadata are included.</li>
+    <li><strong>3. Apple Maps / MapKit (Apple Inc.):</strong> Native iOS map rendering, cartographic display, and external turn-by-turn navigation hand-off. (<a class="inline-link" href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>)</li>
+  </ul>
+  <p>We do not sell, rent, lease, trade, or share any user data with commercial brokers, advertisers, or third-party analytics platforms.</p>
 
-  <h2 id="security">6. Security</h2>
-  <p>Data in transit is encrypted, and access to node data and account information is restricted by role. API keys and ThingSpeak channel credentials are visible only to administrators within your organization's account settings.</p>
+  <h2 id="storage">2.5 Data Storage, Caching &amp; Deletion Rights</h2>
+  <ul>
+    <li><strong>Local Storage:</strong> Channel configurations and custom labels are stored locally in the app's sandboxed storage.</li>
+    <li><strong>Telemetry Caching:</strong> To optimize battery life and cellular data usage, historical telemetry charts (24H, 7D, 30D feeds) are cached locally with an automatic 30-minute expiration window.</li>
+    <li><strong>Immediate Deletion:</strong>
+      <ul>
+        <li>Instantly purge all cached historical feeds by tapping <strong>Settings &gt; Clear Cache</strong> in the app.</li>
+        <li>Remove individual channels and associated API keys by tapping <strong>Settings &gt; API Keys</strong> and deleting the desired channel.</li>
+        <li>Uninstalling GridWatch permanently erases all locally stored keys, cached telemetry, and user preferences from your device.</li>
+      </ul>
+    </li>
+  </ul>
 
-  <h2 id="rights">7. Your rights</h2>
-  <p>You can request a copy of your account data, ask us to correct inaccurate information, or request deletion of your account, by contacting us or your organization's administrator. Because node data belongs to your organization, requests to modify or remove operational data should go through your administrator.</p>
+  <h2 id="tracking">2.6 Tracking, Analytics &amp; Advertising Policy</h2>
+  <ul>
+    <li><strong>No Tracking:</strong> GridWatch does not track users across third-party apps or websites for targeted advertising.</li>
+    <li><strong>No Advertising SDKs:</strong> Zero third-party advertising SDKs, zero banner ads, and zero affiliate tracking scripts exist in the application.</li>
+    <li><strong>No IDFA / AdSupport:</strong> GridWatch does not access the Apple Advertising Identifier (IDFA).</li>
+  </ul>
 
-  <h2 id="children">8. Children's privacy</h2>
-  <p>GridWatch is a professional tool for field engineers and grid operators. It is not directed at children, and we do not knowingly collect information from anyone under 18.</p>
+  <h2 id="accounts">2.7 Account Creation &amp; Biometric Security</h2>
+  <ul>
+    <li><strong>No Account Registration Required:</strong> You do not need to register an account, create a password, or provide an email address to use GridWatch.</li>
+    <li><strong>Demo Channel Provided:</strong> GridWatch includes a pre-configured live demo channel ("ECG Transformer Health Monitoring System", Channel ID: 3413128) so users and App Store reviewers can immediately inspect all capabilities without manual provisioning.</li>
+  </ul>
 
-  <h2 id="changes">9. Changes to this policy</h2>
-  <p>If we make material changes to this policy, we'll update the date at the top of this page and notify administrators through the app or by email.</p>
+  <h2 id="children">2.8 Children's Privacy (COPPA &amp; GDPR-K)</h2>
+  <p>GridWatch is an industrial engineering and utility telemetry application intended for professional engineers, grid operators, and students. We do not knowingly collect or solicit personal data from children under the age of 13 (or 16 in the European Union).</p>
 
-  <h2 id="contact">10. Contact us</h2>
-  <p>Questions about this policy or your data can be sent to <a class="inline-link" href="mailto:privacy@gridwatch.app">privacy@gridwatch.app</a>, or through our <a class="inline-link" href="support.html">support page</a>.</p>
+  <h2 id="rights">2.9 User Rights Under International Laws (GDPR &amp; CCPA/CPRA)</h2>
+  <p>Under applicable data protection regulations (including the EU General Data Protection Regulation and California Consumer Privacy Act):</p>
+  <ul>
+    <li><strong>Right of Access / Portability:</strong> Since all channel data is stored locally on your device, you have direct, immediate access to your data at all times.</li>
+    <li><strong>Right to Erasure:</strong> You can erase all telemetry data and saved credentials immediately via the "Clear Cache" button or by uninstalling the application.</li>
+    <li><strong>"Do Not Sell or Share My Personal Information":</strong> We do not sell or share personal data under any circumstances.</li>
+  </ul>
+
+  <h2 id="changes">2.10 Changes to This Policy &amp; Contact Inquiries</h2>
+  <p>We may update this Privacy Policy periodically to reflect technological updates or legal requirements. Updates will be posted on our website with a revised "Last Updated" date.</p>
+  <p>For questions, feedback, or inquiries regarding this Privacy Policy:</p>
+  <ul>
+    <li>Email: <a class="inline-link" href="mailto:support@gridwatch.app">support@gridwatch.app</a> (or <a class="inline-link" href="mailto:contact@kaliblip.com">contact@kaliblip.com</a>)</li>
+    <li>Developer / Entity: Kaliblip Development Team</li>
+  </ul>
 </div>
 
 <footer>
   <div class="wrap footer-row">
-    <span class="footer-copy">© 2026 GridWatch. All rights reserved.</span>
+    <span class="footer-copy">© 2026 Kaliblip / GridWatch. All rights reserved.</span>
     <ul class="footer-links">
       <li><a href="index.html">Product</a></li>
       <li><a href="support.html">Support</a></li>
@@ -117,5 +161,6 @@
   </div>
 </footer>
 
+<script src="theme.js"></script>
 </body>
 </html>
