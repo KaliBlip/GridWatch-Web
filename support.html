@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Support — GridWatch</title>
-<meta name="description" content="Get help with GridWatch — account access, alerts, node connectivity, and ThingSpeak configuration.">
+<title>Support — GridWatch Field Console</title>
+<meta name="description" content="Technical support, hardware integration guidance, user walkthroughs, and comprehensive FAQs for GridWatch Field Console.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -51,66 +51,167 @@
 
 <header class="page-header">
   <div class="wrap">
-    <span class="section-label">Help</span>
-    <h1>Support</h1>
-    <span class="updated">Typical response time: within 1 business day</span>
+    <span class="section-label">Help &amp; Customer Service</span>
+    <h1>Support &amp; FAQ Directory</h1>
+    <span class="updated">Service SLA: Response within 24–48 business hours · Build 19</span>
   </div>
 </header>
 
 <div class="content">
-  <p>Whether you're a field engineer stuck on a login, or an administrator setting up a ThingSpeak channel for a new region, this page covers the most common questions. Can't find what you need? Reach the team directly below.</p>
+  <p>Welcome to the GridWatch Support Center. We provide technical assistance, hardware integration support, and troubleshooting for the GridWatch Field Console (developed by Kaliblip).</p>
 
   <div class="support-grid">
     <div class="support-card">
-      <h3>Email support</h3>
+      <h3>Technical Support Email</h3>
       <p>For account access, technical issues, or bug reports.</p>
       <a class="inline-link" href="mailto:support@gridwatch.app">support@gridwatch.app</a>
     </div>
     <div class="support-card">
-      <h3>Admin & API help</h3>
-      <p>For ThingSpeak channel setup, API keys, and organization SSO.</p>
-      <a class="inline-link" href="mailto:admin-support@gridwatch.app">admin-support@gridwatch.app</a>
+      <h3>Developer &amp; Integration Help</h3>
+      <p>For ThingSpeak channel setup, API keys, and hardware integration.</p>
+      <a class="inline-link" href="mailto:support@kaliblip.com">support@kaliblip.com</a>
     </div>
   </div>
+
+  <h2>3.2 Technical Requirements &amp; System Compatibility</h2>
+  <ul>
+    <li><strong>iOS Requirements:</strong> Compatible with iPhone and iPad running iOS 16.0 or later.</li>
+    <li><strong>Network Requirements:</strong> Active Wi-Fi or cellular data connection (2G/3G/4G/5G) to fetch live IoT feeds from ThingSpeak.</li>
+    <li><strong>Location Services:</strong> GPS enabled for distance calculation and driving navigation.</li>
+    <li><strong>Authentication Hardware:</strong> Touch ID, Face ID, or enrolled device passcode (optional demo access provided).</li>
+  </ul>
+
+  <h2>3.3 User Guides &amp; Quick Start</h2>
+  <ul>
+    <li><strong>1. First Launch &amp; Demo Mode:</strong>
+      <p>Open GridWatch on your device. Authenticate with Face ID, Touch ID, or Passcode. If testing on a simulator or device without biometrics, tap "Continue with Demo Mode". The app opens with pre-seeded live telemetry from our active demo transformer node ("ECG Transformer Health Monitoring System", Channel ID: 3413128).</p>
+    </li>
+    <li><strong>2. Adding a Custom Transformer Channel:</strong>
+      <p>Navigate to Settings &gt; API Keys. Tap "Add ThingSpeak Channel". Enter your ThingSpeak Channel ID (e.g., 3413128) and Read API Key (e.g., O53DJ33T0MW1T8P7). Enter a human-readable Region or Substation Name (e.g., "Kumasi Substation") and tap "Save Channel". GridWatch will immediately validate the connection and fetch live telemetry.</p>
+    </li>
+    <li><strong>3. Interactive Telemetry Graphs:</strong>
+      <p>Tap on any transformer card from the Home dashboard to view the Node Detail screen. Switch between 24H, 7D, and 30D historical trend tabs for Voltage, Current, Temperature, Humidity, and Oil Levels.</p>
+    </li>
+    <li><strong>4. Navigating to a Transformer:</strong>
+      <p>On the Node Detail or Map tab, tap "Get Directions". Select "Open Apple Maps" (or Google Maps) to launch full turn-by-turn road navigation directly to the transformer's physical GPS coordinates.</p>
+    </li>
+  </ul>
 
   <h2>Status colors, at a glance</h2>
   <p>These colors are consistent across the list, map, and node detail screens:</p>
   <div class="status-key">
     <span><span class="dot dot-green"></span> Normal — operating within expected range</span>
     <span><span class="dot dot-amber"></span> Warning — a metric is outside normal range</span>
-    <span><span class="dot dot-red"></span> Critical / Offline — needs attention now</span>
+    <span><span class="dot dot-red"></span> Critical / Faulty — needs attention now</span>
   </div>
 
-  <h2>Frequently asked questions</h2>
+  <h2>4. Comprehensive Frequently Asked Questions (FAQs)</h2>
 
+  <h3>4.1 General Information</h3>
   <div class="faq-item">
-    <h3><span class="dot dot-green"></span>I can't sign in — what should I check first?</h3>
-    <p>Confirm you're using the email your organization registered with GridWatch. If your organization uses SSO, choose "Sign in with organization SSO" on the login screen instead of entering a password. If the problem continues, your administrator may need to re-invite your account.</p>
+    <h3><span class="dot dot-green"></span>What is GridWatch?</h3>
+    <p>GridWatch is a specialized mobile field console engineered for electrical utility engineers, grid maintenance teams, and power authorities (such as the Electricity Company of Ghana - ECG). It aggregates and visualizes real-time and historical health telemetry from IoT sensors mounted inside high-voltage and distribution transformers.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>Do I need to create an account or subscribe to use GridWatch?</h3>
+    <p>No. GridWatch does not require any account creation, login credentials, or recurring subscriptions. All core monitoring features are accessible immediately upon installation.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>Is GridWatch affiliated with MathWorks or ThingSpeak?</h3>
+    <p>GridWatch connects to the ThingSpeak IoT platform via its publicly documented REST APIs. GridWatch is an independent field application developed by Kaliblip to monitor electrical infrastructure.</p>
   </div>
 
+  <h3>4.2 Telemetry &amp; Transformer Metrics</h3>
   <div class="faq-item">
-    <h3><span class="dot dot-amber"></span>A node shows "Offline" but I know it's powered — what does that mean?</h3>
-    <p>Offline means GridWatch hasn't received a new reading from that node's sensor within the expected interval — it doesn't necessarily mean the transformer itself has lost power. Check the sensor's own connectivity (signal, wiring, or gateway) at the site. If several nearby nodes go offline together, the issue is more likely with the shared gateway or backend connection than with any single sensor.</p>
+    <h3><span class="dot dot-green"></span>What metrics does GridWatch monitor on each transformer?</h3>
+    <p>GridWatch reads up to eight sensor fields corresponding to standard industrial transformer telemetry: Phase Voltage (V) [Nominal 230V single-phase / 400V three-phase], Load Current (A), Operating Temperature (°C) [Winding and top-oil thermal readings], Ambient Humidity (%), Transformer Oil Level (%) [Core dielectric oil reserve], Operational Status (Normal, Warning, Faulty, or Offline), and Geographic Coordinates (Latitude &amp; Longitude).</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-amber"></span>What are the warning and critical threshold values?</h3>
+    <p>GridWatch applies standard electrical utility safety thresholds:<br>
+    • <strong>Temperature:</strong> Warning at 75°C, Critical at 85°C<br>
+    • <strong>Voltage:</strong> Low Warning &lt;210V, Low Critical &lt;195V, High Warning &gt;250V, High Critical &gt;260V<br>
+    • <strong>Current:</strong> Warning at 90A, Critical at 110A<br>
+    • <strong>Oil Level:</strong> Warning below 80%, Critical below 60%<br>
+    • <strong>Humidity:</strong> Warning at 70%, Critical at 85%</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>How often does the telemetry refresh?</h3>
+    <p>The Home and Node Detail screens allow on-demand pull-to-refresh. Telemetry charts are updated each time you open a node or trigger a manual refresh.</p>
   </div>
 
+  <h3>4.3 Channel Configuration &amp; API Keys</h3>
   <div class="faq-item">
-    <h3><span class="dot dot-amber"></span>Why did I get an alert but the current reading looks normal?</h3>
-    <p>Alerts trigger from the reading at the moment a threshold was crossed. Tap the alert to open that node's detail screen and view the trend chart — you'll see the spike or drop, even if the metric has since returned to normal.</p>
+    <h3><span class="dot dot-green"></span>Where do I get my ThingSpeak Channel ID and Read API Key?</h3>
+    <p>Log in to your ThingSpeak account at <a class="inline-link" href="https://thingspeak.com" target="_blank" rel="noopener">https://thingspeak.com</a>, open your transformer channel, and click on the "API Keys" tab. Copy the numeric "Channel ID" and the alphanumeric "Read API Key".</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-amber"></span>Why do I receive an "HTTP 400 Bad Request" error when adding a channel?</h3>
+    <p>An HTTP 400 response from ThingSpeak almost always indicates an incorrect Read API Key. Common causes include a typo between capital letter "O" (Oscar) and digit "0" (zero) (e.g., in our demo key O53DJ33T0MW1T8P7, the first character is "O"), or leading/trailing whitespace. GridWatch (Build 19+) includes automatic credential sanitization and an "Auto-fill Demo Channel" button in Settings &gt; API Keys to eliminate errors.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>Can I monitor multiple transformers simultaneously?</h3>
+    <p>Yes! You can add as many ThingSpeak channels as needed in Settings &gt; API Keys. All configured transformers will appear on your Home dashboard and GIS Map.</p>
   </div>
 
+  <h3>4.4 Maps, GPS &amp; Turn-by-Turn Navigation</h3>
   <div class="faq-item">
-    <h3><span class="dot dot-green"></span>How do I change what triggers a push notification?</h3>
-    <p>Go to Settings → Notification Preferences to choose which alert types (overload, overheating, low voltage, offline) send a push notification to your device.</p>
+    <h3><span class="dot dot-green"></span>Why does GridWatch request location permission?</h3>
+    <p>GridWatch requests "When In Use" location permission so it can display your position on the map, measure driving distance to transformer sites, and route maintenance crews along official road networks.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-amber"></span>What happens if I deny location access?</h3>
+    <p>The app will still display all transformer telemetry cards, status feeds, and charts. On the Map tab, transformer pins will still be visible at their fixed GPS locations; however, your live user position marker and driving route will be hidden.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>Why did the map show a direct line instead of a road route?</h3>
+    <p>GridWatch uses the Open Source Routing Machine (OSRM) to calculate realistic road geometry. If your device is offline or the routing service experiences temporary network latency, GridWatch automatically falls back to a direct line so you can still visualize distance and compass heading without disruption.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>How do I open turn-by-turn driving directions?</h3>
+    <p>Tap "Get Directions" on any node card or map popup. GridWatch will invoke native Apple Maps (on iOS) or Google Maps, pre-filling the exact destination coordinates.</p>
   </div>
 
+  <h3>4.5 Security, Face ID &amp; Passcode</h3>
   <div class="faq-item">
-    <h3><span class="dot dot-green"></span>I'm an administrator — where do I manage the ThingSpeak connection?</h3>
-    <p>Go to Settings → Connected Channels. From there you can update the ThingSpeak channel ID, rotate API keys, and map channel fields (field1–field8) to the metrics shown in the app. This section is only visible to accounts with administrator permissions.</p>
+    <h3><span class="dot dot-green"></span>Why does GridWatch have a Lock Screen?</h3>
+    <p>GridWatch monitors critical electrical infrastructure. The biometric lock screen prevents unauthorized individuals from accessing sensitive utility nodes if your phone is unlocked or left unattended.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>Does GridWatch collect or store my Face ID or fingerprint?</h3>
+    <p>No. iOS handles all biometric processing inside the device's Secure Enclave. GridWatch only receives a cryptographic success/failure status from the operating system.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>What if Face ID fails or my device does not have biometrics?</h3>
+    <p>The lock screen will automatically present the standard iOS device passcode fallback. Additionally, lab review devices or devices without an enrolled passcode can tap "Continue with Demo Mode" to enter immediately.</p>
   </div>
 
+  <h3>4.6 Cache, Offline Access &amp; Troubleshooting</h3>
   <div class="faq-item">
-    <h3><span class="dot dot-green"></span>Can I use GridWatch without a data connection in the field?</h3>
-    <p>The app needs a connection to fetch live and historical data. If you open a node you've viewed recently, GridWatch shows the last synced reading with a clear "last updated" timestamp so you know how current it is.</p>
+    <h3><span class="dot dot-green"></span>Can I view transformer data when I am offline?</h3>
+    <p>Yes. GridWatch caches the most recently retrieved historical metrics locally for 30 minutes. If you lose cellular connection in a remote substation, you can still inspect cached sensor trends.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>How do I clear the local cache?</h3>
+    <p>Go to Settings &gt; Clear Cache, and tap "Clear". All cached historical telemetry will be wiped immediately, and fresh data will be retrieved from the network on your next view.</p>
+  </div>
+  <div class="faq-item">
+    <h3><span class="dot dot-amber"></span>The app says "Channel Not Found" or "Network Error". What should I check?</h3>
+    <p>Verify that: 1. Your mobile device has an active internet connection; 2. The ThingSpeak Channel ID is active and correctly typed; 3. If the channel is private, make sure you supplied a valid Read API Key; 4. The IoT hardware in the field is actively publishing feeds to ThingSpeak.</p>
+  </div>
+
+  <h3>4.7 Apple App Reviewer Evaluation Guidance</h3>
+  <div class="faq-item">
+    <h3><span class="dot dot-green"></span>How can App Store reviewers test all features without physical IoT hardware?</h3>
+    <p>GridWatch is specifically pre-configured with active live telemetry:<br>
+    1. <strong>First Launch:</strong> GridWatch automatically seeds the active live channel "ECG Transformer Health Monitoring System" (Channel ID: 3413128, Ashanti region).<br>
+    2. <strong>Authentication:</strong> Tap "Unlock with Face ID" / Passcode, or tap "Continue with Demo Mode" for passcode-free test devices.<br>
+    3. <strong>Core Features:</strong><br>
+    • Home: Live telemetry cards (voltage, current, temperature, oil level, humidity).<br>
+    • Node Details: Interactive 24H, 7D, and 30D historical line charts.<br>
+    • Map: GIS pins rendered on Apple Maps with OSRM driving routes and Apple Maps direction hand-off.<br>
+    • Alerts: Real-time threshold diagnostic alerts.<br>
+    • Settings &gt; API Keys: Tap "Auto-fill Demo Channel (3413128)" to test credential addition and instant validation.</p>
   </div>
 
   <h2>Report a problem</h2>
@@ -119,7 +220,7 @@
 
 <footer>
   <div class="wrap footer-row">
-    <span class="footer-copy">© 2026 GridWatch. All rights reserved.</span>
+    <span class="footer-copy">© 2026 Kaliblip / GridWatch. All rights reserved.</span>
     <ul class="footer-links">
       <li><a href="index.html">Product</a></li>
       <li><a href="privacy.html">Privacy Policy</a></li>
